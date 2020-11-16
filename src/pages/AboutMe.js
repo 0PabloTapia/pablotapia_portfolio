@@ -1,11 +1,16 @@
 import AboutSection from '../components/AboutSection';
+import ServicesSection from '../components/ServicesSection';
 
-const AboutUs = () => {
+
+const AboutMe = () => {
 
     return (
-        <AboutSection />
-    )
-}
+        <>
+          <AboutSection />
+          <ServicesSection />
+        </>
+    );
+};
 
 
-export default AboutUs;
+export default AboutMe;
