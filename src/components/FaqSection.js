@@ -4,7 +4,9 @@ const FaqSection = () => {
 
     return (
         <div className="faq">
-            <h2> Preguntas <span>FAQ</span></h2>
+            <h2> 
+                Preguntas <span>FAQ</span>
+            </h2>
             <div className="question">
                 <h4>Cómo empezar</h4>
                 <div className="answer">
@@ -42,8 +44,8 @@ const FaqSection = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 
 export default FaqSection;
