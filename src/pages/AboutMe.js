@@ -1,6 +1,6 @@
 import AboutSection from '../components/AboutSection';
 import ServicesSection from '../components/ServicesSection';
-
+import FaqSection from '../components/FaqSection';
 
 const AboutMe = () => {
 
@@ -8,6 +8,7 @@ const AboutMe = () => {
         <>
           <AboutSection />
           <ServicesSection />
+          <FaqSection />
         </>
     );
 };
