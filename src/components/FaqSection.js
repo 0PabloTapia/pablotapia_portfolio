@@ -1,53 +1,49 @@
+
 import styled from 'styled-components';
 import { About } from '../styles';
+import Toggle from'./Toggle';
+import { AnimateSharedLayout } from 'framer-motion';
 
 const FaqSection = () => {
-
     return (
         <Faq>
             <h2> 
                 Preguntas <span>FAQ</span>
             </h2>
-            <div className="question">
-                <h4>Cómo empezar</h4>
+            <AnimateSharedLayout>
+            <Toggle title="How do i start?">
+                <div className="answer">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Maiores harum praesentium dolorem libero, officiis vel.
+                    </p>
+            </div>
+            </Toggle>
+            <Toggle title="¿Qué proyectos he creado?">
+                <div className="answer">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Maiores harum praesentium dolorem libero, officiis vel.
+                    </p>
+            </div>
+            </Toggle>
+            <Toggle title="Métodos de pago">
+                <div className="answer">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Maiores harum praesentium dolorem libero, officiis vel.
+                    </p>
+            </div>
+            </Toggle>
+            <Toggle title="Horario">
                 <div className="answer">
                     <p>Lorem ipsum dolor sit amet.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Maiores harum praesentium dolorem libero, officiis vel.
                     </p>
                 </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h4>¿Qué proyectos he creado?</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Maiores harum praesentium dolorem libero, officiis vel.
-                    </p>
-                </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h4>Métodos de pago</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Maiores harum praesentium dolorem libero, officiis vel.
-                    </p>
-                </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h4>Horario</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Maiores harum praesentium dolorem libero, officiis vel.
-                    </p>
-                </div>
-                <div className="faq-line"></div>
-            </div>
+            </Toggle>
+            </AnimateSharedLayout>
         </Faq>
     );
 };
