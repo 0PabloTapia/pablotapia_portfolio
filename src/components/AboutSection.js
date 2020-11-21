@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom';
 import home1 from '../img/home1.png';
 import {About, Description, Image, Hide} from '../styles';
 import { motion } from 'framer-motion';
@@ -30,7 +31,9 @@ const AboutSection = () => {
                     Contáctame para cualquier idea o trabajo relacionado a las 
                     tecnologías que encuentres en mis proyectos
                 </motion.p>
+                <Link to="/contact">
                 <motion.button variants={fade}>Contáctame</motion.button>
+                </Link>
             </Description>
             <Image>
                 <motion.img variants={photoAnim} src={home1} alt="profilepic"/>
