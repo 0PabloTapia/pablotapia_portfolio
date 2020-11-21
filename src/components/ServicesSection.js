@@ -61,6 +61,9 @@ const Services = styled(About)`
         width: 70%;
         padding: 2rem 0rem 4rem 0rem;
     }
+    @media (max-width: 1300px) {
+        justify-content: center
+    }
 `;
 
 const Cards = styled.div`
