@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import home1 from '../img/home1.png';
+import me1 from '../img/me1.png';
 import {About, Description, Image, Hide} from '../styles';
 import { motion } from 'framer-motion';
 import { titleAnim, fade, photoAnim } from '../animation';
@@ -15,28 +15,28 @@ const AboutSection = () => {
                         <motion.h2 
                             variants={titleAnim}
                         >
-                            We work to make
+                            Hi! My name is
                         </motion.h2>
                     </Hide>
                     <Hide>
                         <motion.h2 variants={titleAnim}>
-                            your <span>dreams</span> come
+                             <span>Pablo</span> i'm a software
                         </motion.h2>
                     </Hide>
                     <Hide>
-                        <motion.h2 variants={titleAnim}>true.</motion.h2 >
+                        <motion.h2 variants={titleAnim}>developer</motion.h2 >
                     </Hide>
                 </motion.div>
                 <motion.p variants={fade}>
-                    Contáctame para cualquier idea o trabajo relacionado a las 
-                    tecnologías que encuentres en mis proyectos
+                    Former airplane pilot who discovered software development. Here i will be
+                    posting my favorite projects i've worked on, feel free to stick around and test them out!
                 </motion.p>
                 <Link to="/contact">
-                <motion.button variants={fade}>Contáctame</motion.button>
+                <motion.button variants={fade}>Contact Me</motion.button>
                 </Link>
             </Description>
             <Image>
-                <motion.img variants={photoAnim} src={home1} alt="profilepic"/>
+                <motion.img variants={photoAnim} src={me1} alt="profilepic"/>
             </Image>
             <Wave />
         </About>

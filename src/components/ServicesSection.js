@@ -1,12 +1,14 @@
-import clock from '../img/clock.svg';
-import diaphragm from '../img/diaphragm.svg';
-import money from '../img/money.svg';
-import teamwork from '../img/teamwork.svg';
+
+import styledcomponents from '../img/styledcomponents.png';
 import home2 from '../img/home2.png';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faJsSquare, faReact, faHtml5, faSass, faCss3Alt, faBootstrap, faGitAlt} from '@fortawesome/free-brands-svg-icons';
 //styles
 import styled from 'styled-components';
 import { About, Description, Image } from '../styles';
-import {fade} from '../animation';
+import {motion} from 'framer-motion';
+import {fade, lineAnim} from '../animation';
 import {useScroll} from './onScroll';
 
 const ServicesSection = () => {
@@ -14,40 +16,54 @@ const ServicesSection = () => {
     return (
         <Services ref={element} animate={controls} variants={fade}>
             <Description>
-                <h2>Trabajo de <span>alta</span> calidad</h2>
+                <h2>Technical <span>Skills</span></h2>
+                <motion.div variants={lineAnim} className="line"></motion.div>
                 <Cards>
                     <Card>
                         <div className="icon">
-                            <img src={clock} alt="reloj"/>
-                            <h3>Eficiente</h3>
+                            <FontAwesomeIcon className="play fa-5x" icon={faJsSquare} />
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        
                     </Card>
                     <Card>
                         <div className="icon">
-                            <img src={diaphragm} alt="diaphragm"/>
-                            <h3>diafragma</h3>
+                        <FontAwesomeIcon className="play fa-5x" icon={faReact} />
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                    </Card>
+                    <Card>
+                    <div className="icon">
+                        <FontAwesomeIcon className="play fa-5x" icon={faHtml5} />
+                        </div>
+                    </Card>
+                    <Card>
+                    <div className="icon">
+                        <FontAwesomeIcon className="play fa-5x" icon={faCss3Alt} />
+                        </div>
+                    </Card>
+                    <Card>
+                    <div className="icon">
+                        <FontAwesomeIcon className="play fa-5x" icon={faSass} />
+                        </div>
+                    </Card>
+                    <Card>
+                    <div className="icon">
+                        <FontAwesomeIcon className="play fa-5x" icon={faGitAlt} />
+                        </div>
                     </Card>
                     <Card>
                         <div className="icon">
-                            <img src={money} alt="dinero"/>
-                            <h3>Asequible</h3>
+                        <FontAwesomeIcon className="play fa-5x" icon={faBootstrap} />
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
                     </Card>
                     <Card>
                         <div className="icon">
-                            <img src={teamwork} alt="people"/>
-                            <h3>Trabajo en equipo</h3>
+                            <img src={styledcomponents} alt="people" height="70px" />
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
                     </Card>
                 </Cards>
             </Description>
             <Image>
-                <img src={home2} alt="camera"/>
+                <img src={home2} alt="developer"/>
             </Image>
         </Services>
     );
@@ -60,6 +76,13 @@ const Services = styled(About)`
     p {
         width: 70%;
         padding: 2rem 0rem 4rem 0rem;
+    }
+    .line{
+        height: 0.5rem;
+        background: #61DAFB;
+        margin-bottom: 3rem;
+        position: absolute;
+        top: 6rem;
     }
     @media (max-width: 1300px) {
         justify-content: center
@@ -76,6 +99,8 @@ const Card = styled.div`
     .icon {
         display: flex;
         align-items: center;
+        padding-bottom: 3rem;
+        color:  #61DAFB;
         h3 {
             margin-left: 1rem;
             background: white;

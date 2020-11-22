@@ -11,7 +11,7 @@ const Nav = () => {
             <h1><Link id="logo" to="/">Capture</Link></h1>
             <ul>
                 <li>
-                    <Link to="/">1. About Me</Link>
+                    <Link to="/">About Me</Link>
                     <Line 
                        transition={{ duration: 0.75 }}
                        initial={{ width: "0%" }}
@@ -19,7 +19,7 @@ const Nav = () => {
                     />
                 </li>
                 <li>
-                    <Link to="/work">2. Our Work</Link>
+                    <Link to="/work">Projects</Link>
                     <Line 
                        transition={{ duration: 0.75 }}
                        initial={{ width: "0%" }}
@@ -27,7 +27,7 @@ const Nav = () => {
                     />
                 </li>
                 <li>
-                    <Link to="/contact">3. Contact Me</Link>
+                    <Link to="/contact">Contact Me</Link>
                     <Line 
                        transition={{ duration: 0.75 }}
                        initial={{ width: "0%" }}
@@ -87,7 +87,7 @@ const StyledNav = styled.nav`
 
 const Line = styled(motion.div)`
     height: 0.3rem;
-    background: #23d997;
+    background:#61DAFB;
     width: 5%;
     position: absolute;
     bottom: -80%;
