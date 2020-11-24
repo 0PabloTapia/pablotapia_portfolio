@@ -3,7 +3,14 @@ import styledcomponents from '../img/styledcomponents.png';
 import home2 from '../img/home2.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faJsSquare, faReact, faHtml5, faSass, faCss3Alt, faBootstrap, faGitAlt} from '@fortawesome/free-brands-svg-icons';
+import {faJsSquare, 
+        faReact, 
+        faHtml5, 
+        faSass, 
+        faCss3Alt, 
+        faBootstrap, 
+        faGitAlt
+        } from '@fortawesome/free-brands-svg-icons';
 //styles
 import styled from 'styled-components';
 import { About, Description, Image } from '../styles';
