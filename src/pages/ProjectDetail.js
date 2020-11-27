@@ -34,13 +34,12 @@ const ProjectDetail = () => {
                         <Award 
                             title={award.title} 
                             description={award.description} 
+                            code={award.code}
                             key={award.title} 
                         />
                     ))}
                 </Awards>
-                <ImageDisplay>
-                    <img src={project.secondaryImg} alt="secondary"/>
-                </ImageDisplay>
+               
             </Details>
             )}
         </>
@@ -78,36 +77,42 @@ const Awards = styled.div`
     }
 `;
 const AwardStyle = styled.div`
-    padding: 5rem;
+    padding: 2rem;
+
     h3 {
         font-size: 2rem;
     }
     .line {
         width: 100%;
-        background: #23d997;
+        background: #61DAFB;
         height: 0.5rem;
         margin: 1rem 0rem;
     }
+    .description a {
+        color: #ccc;
+        text-decoration-line: none;
+        font-family: 'Inter', sans-serif;
+        font-size: 1.4rem;
+        &:hover {
+            font-size: 1.5rem;
+            color: #b6a6da;
+        }
+    }
+
     p {
         padding: 2rem 0rem;
     }
 `
-const ImageDisplay = styled.div`
-    min-height: 50vh;
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-`
+
 
 //Award component
-const Award = ( {title, description} ) => {
+const Award = ( {title, description, code} ) => {
     return(
         <AwardStyle>
             <h3>{title}</h3>
             <div className="line"></div>
-            <p>{description}</p>
+            <p className="description">{description}</p>
+            <p className="description">{code}</p>
         </AwardStyle>
     )
 }

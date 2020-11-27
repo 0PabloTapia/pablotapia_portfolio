@@ -8,7 +8,7 @@ const Nav = () => {
 
     return(
         <StyledNav>
-            <h1><Link id="logo" to="/">Capture</Link></h1>
+            <h1><Link id="logo" to="/"><i class="fab fa-connectdevelop fa-2x"></i></Link></h1>
             <ul>
                 <li>
                     <Link to="/">About Me</Link>
@@ -66,6 +66,9 @@ const StyledNav = styled.nav`
     li{
        padding-left: 10rem;
        position: relative;
+    }
+    i {
+       color: #61DAFB; 
     }
     @media (max-width: 1300px) {
         flex-direction: column;

@@ -1,78 +1,97 @@
-import athlete from "./img/athlete-small.png";
-import goodtimes from "./img/goodtimes-small.png";
-import theracer from "./img/theracer-small.png";
-import athlete2 from "./img/athlete2.png";
-import goodtimes2 from "./img/good-times2.jpg";
-import theracer2 from "./img/the-racer2.jpg";
+import GHjobs from "./img/GHjobs.png";
+import rollinplayer from "./img/rollinplayer.png";
+import apperbrochure from "./img/apperbrochure.png";
+import cryptoapp from "./img/cryptoapp.png";
+
 
 export const ProjectState = () => {
   return [
     {
-      title: "The Athlete",
-      mainImg: athlete,
-      secondaryImg: athlete2,
-      url: "/work/the-athlete",
+      title: "GitHub Job Finder",
+      mainImg: GHjobs,
+      url: "/work/githubjobfinder",
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "What can i do?",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Soy una aplicación de búsqueda para trabajos de la plataforma github creada con su API / I'm a Job searching app for github jobs made with GH own API",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "Tech Stack",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "JavaScript, HTML5, Tailwind",
         },
         {
-          title: "It’s okay lmao.",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+          title: "Try me!",
+          description: <a href="https://mygithub-jobs.netlify.app" rel="noreferrer" target="_blank"><i class="fas fa-paper-plane fa-4x"></i>Go</a>,
+          code:  <a href="https://github.com/0PabloTapia/githubjobfinder" rel="noreferrer" target="_blank"><i class="fab fa-github fa-4x"></i>MyCode</a>,
         },
       ],
     },
     {
-      title: "Good Times",
-      mainImg: goodtimes,
-      url: "/work/good-times",
-      secondaryImg: goodtimes2,
-      awards: [
+      title: "Mobile App Brochure",
+      mainImg: apperbrochure,
+      url: "/work/brochuresite",
+      awards:  [
         {
-          title: "Truly A masterpiece",
+          title: "What can i do?",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Soy una página de presentación simple hecha para practicar con css y bootstrap / I'm a simple brochure site to practice with css and bootstrap ",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "Tech Stack",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "HTML5, CSS3, Bootstrap, JS for a scrolling function",
         },
         {
-          title: "It’s okay lmao.",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+          title: "Try me!",
+          description: <a href="https://appernew.netlify.app" rel="noreferrer" target="_blank"><i class="fas fa-paper-plane fa-4x"></i>Go</a>,
+          code:  <a href="https://github.com/0PabloTapia/appernew"  rel="noreferrer" target="_blank"><i class="fab fa-github fa-4x"></i>MyCode</a>,
         },
       ],
     },
     {
-      title: "The Racer",
-      mainImg: theracer,
-      url: "/work/the-racer",
-      secondaryImg: theracer2,
+      title: "Rollin' Player",
+      mainImg: rollinplayer,
+      url: "/work/rolling-player",
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "What can i do?",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Soy un reproductor de música con una lista hecha con canciones de la página chillHop! / I'm a music player with a preloaded song list from chillHop page! ",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "Tech Stack",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "JavaScript, ReactJS, Sass",
         },
         {
-          title: "It’s okay lmao.",
+          title: "Try me!",
+          description: <a href="https://rolling-player.netlify.app" rel="noreferrer" target="_blank"><i class="fas fa-paper-plane fa-4x"></i>Go</a>,
+          code:  <a href="https://github.com/0PabloTapia/Rollin-player"  rel="noreferrer" target="_blank"><i class="fab fa-github fa-4x"></i>MyCode</a>,
+        },
+      ],
+    },
+    
+    {
+      title: "Crypto Check",
+      mainImg: cryptoapp,
+      url: "/work/cryptocheck",
+      awards: [
+        {
+          title: "What can i do?",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Cotizo criptomonedas a distintas divisas con la API de CryptoCompare / I can check accurate cryptocurrency market price to foreign exchange with CryptoCompare API  ",
+        },
+        {
+          title: "Tech Stack",
+          description:
+            "JavaScript, HTML5, CSS3",
+        },
+        {
+          title: "Try me!",
+          description: <a href="https://mycrypto-exchange.netlify.app" rel="noreferrer" target="_blank"><i class="fas fa-paper-plane fa-4x"></i>Go</a>,
+          code:  <a href="https://github.com/0PabloTapia/cotizadorcriptomonedas"  rel="noreferrer" target="_blank"><i class="fab fa-github fa-4x"></i>MyCode</a>,
         },
       ],
     },

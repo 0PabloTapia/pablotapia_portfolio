@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 //Images
-import athlete from '../img/athlete-small.png';
-import theracer from '../img/theracer-small.png';
-import goodtimes from '../img/goodtimes-small.png';
+import GHjobs from '../img/GHjobs.png';
+import rollinplayer from '../img/rollinplayer.png';
+import apperbrochure from '../img/apperbrochure.png';
+import cryptoapp from '../img/cryptoapp.png';
 //Animations
 import { motion } from 'framer-motion';
 import { pageAnimation, photoAnim, fade, lineAnim, slider } from '../animation';
@@ -13,6 +14,7 @@ import ScrollTop from '../components/ScrollTop';
 const MyWork = () => {
     const [element, controls] = useScroll();
     const [element2, controls2] = useScroll();
+    const [element3, controls3] = useScroll();
     return(
         <Work style={{ background: "#ffffff" }} exit="exit" variants={pageAnimation} initial="hidden" animate="show" >
             <Frame1 variants={slider}></Frame1>
@@ -20,26 +22,33 @@ const MyWork = () => {
             <Frame3 variants={slider}></Frame3>
             <Frame4 variants={slider}></Frame4>
             <Projects>
-                <motion.h2 variants={fade} >the athlete</motion.h2>
+                <motion.h2 variants={fade} >GitHub Job Finder</motion.h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
-                <Link to="/work/the-athlete">
+                <Link to="/work/githubjobfinder">
                     <Hide>
-                    <motion.img variants={photoAnim} src={athlete} alt="athlete"/>
+                    <motion.img variants={photoAnim} src={GHjobs} alt="appsearch"/>
                     </Hide>
                 </Link>
             </Projects>
             <Projects ref={element} animate={controls} variants={fade}>
-                <h2>the racer</h2>
+                <h2>Rollin'Player</h2>
                 <motion.div ref={element} animate={controls} variants={lineAnim} className="line"></motion.div>
-                <Link to="/work/the-racer">
-                    <img src={theracer} alt="theracer"/>
+                <Link to="/work/rolling-player">
+                    <img src={rollinplayer} alt="musicplayer"/>
                 </Link>
             </Projects>
             <Projects ref={element2} animate={controls2} variants={fade}>
-                <h2>goodtimes</h2>
+                <h2>Mobile App Brochure</h2>
                 <motion.div ref={element2} animate={controls2} variants={lineAnim} className="line"></motion.div>
-                <Link to="/work/good-times">
-                    <img src={goodtimes} alt="goodtimes"/>
+                <Link to="/work/brochuresite">
+                    <img src={apperbrochure} alt="brochure"/>
+                </Link>
+            </Projects>
+            <Projects ref={element3} animate={controls3} variants={fade}>
+                <h2>Crypto Check</h2>
+                <motion.div ref={element3} animate={controls3} variants={lineAnim} className="line"></motion.div>
+                <Link to="/work/cryptocheck">
+                    <img src={cryptoapp} alt="cryptocoins"/>
                 </Link>
             </Projects>
             <ScrollTop />
@@ -62,7 +71,7 @@ const Projects = styled(motion.div)`
     padding-bottom: 10rem;
     .line{
         height: 0.5rem;
-        background: #23d997;
+        background: #61DAFB;
         margin-bottom: 3rem;
     }
     img{

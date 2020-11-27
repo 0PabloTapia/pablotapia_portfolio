@@ -18,6 +18,7 @@ export const Description = styled.div`
     flex: 1;
     padding-right: 5rem;
     z-index: 2;
+    position: relative;
     h2 {
         font-weight: lighter;
     }
@@ -32,11 +33,16 @@ export const Image = styled.div`
     flex: 1;
     overflow: hidden;
     z-index: 2;
+    border-radius: 50%;
     img {
         width: 100%;
         height: 80vh;
         object-fit: cover;
     }
+    @media (max-width: 1300px) {
+        height: 70vh
+    }
+
 `;
 
 export const Hide = styled.div`
